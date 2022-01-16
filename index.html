@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<title>Specificty in CSS</title>
+<head>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <h1>Type vs. Class vs. ID</h1>
+</head>
+
+<body>
+    <h2>Specificity Syntax</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">CSS Code When Using Type, Class, & ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Type</td>
+                <td>&lt;h1&gt; &lt;p&gt; &lt;html element&gt;</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>.example</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>#example</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Specificity Examples</h2>
+    <table>
+        <colgroup span="4"></colgroup>
+            <th>
+                <td>Type</td>
+                <td>Class</td>
+                <td>ID</td>
+            </th>
+            <tr>
+                <td>HTML</td>
+                <td>&lt;h2&gt;This is a test&lt;/h2&gt;</td>
+                <td>&lt;div class="test"&gt;Test Class&lt;/div&gt;</td>
+                <td>&lt;div id="test"&gt;Test ID&lt;/div&gt;</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>.type {<br>
+                    color: green;<br>
+                    font-family: monospace;<br>
+                }</td>
+                <td>.test {<br>
+                    color: indianred;<br>
+                    font-weight: bold;<br>
+                }</td>
+                <td>#final {<br>
+                    color: maroon;<br>
+                    font-style: italic;<br>
+                }</td>
+            </tr>
+            <tr>
+                <td>Output</td>
+                <td class="type">This is a Type Test</td>
+                <td class="test">This is a Class Test</td>
+                <td id="final">This is an ID Test</td>
+            </tr>
+            <tr>
+                <td>Explanation</td>
+                <td>The text "This is a Type Test" was entered as an<br> h2 heading and then CSS was applied to change<br> the text color green and the font-family to monospace.</td>
+                <td>In this example, the text "This is a Class Test" was entered as a class using a div element.<br> This allowed the CSS to identify the class as '.test' and only apply styling
+                to that class. <br>The styling applied was an indianred text color and a bold text.</td>
+                <td>The final example shows the text "This is an ID Test" being classified as an ID.<br> This specifies the element further since IDs are unique and can only be used one. <br>The text in the ID
+                is colored maroon and italicized.</td>
+            </tr>
+    </table>
+</body>
