@@ -1,0 +1,54 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(https://thumbs.gfycat.com/AnguishedColdCommongonolek-size_restricted.gif);
+    color: wheat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table,
+td {
+    border: 2px solid;
+    text-align: center;
+    margin: auto;
+}
+
+thead,
+tfoot {
+    background-color: lightcoral;
+    color: black;
+}
+
+.type {
+    color: green;
+    font-family: monospace;
+}
+
+.test {
+    color: indianred;
+    font-weight: bold;
+}
+
+#final {
+    color: maroon;
+    font-style: italic;
+}
+
+/*h1,
+h2,
+table,
+td,
+thead,
+tfoot,
+.type,
+.test,
+#final {
+    color: wheat;
+}*/
